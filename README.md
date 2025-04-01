@@ -1,3 +1,23 @@
+# Testing Environment
+Tested on ubuntu-22.04 (regolith-wayland) with comsic installed as `sysext` (systemd system extensions) with the following dependencies
+
+```
+sudo apt install just rustc libglvnd-dev libwayland-dev libseat-dev libxkbcommon-dev libinput-dev udev dbus libdbus-1-dev libsystemd-dev libpixman-1-dev libssl-dev libflatpak-dev libpulse-dev pop-launcher libexpat1-dev libfontconfig-dev libfreetype-dev mold cargo libgbm-dev libclang-dev libpipewire-0.3-dev libpam0g-dev -y
+```
+and some extra dependencies I found were missing in the [list](https://github.com/pop-os/cosmic-epoch/blob/cdc45ee666b67a104ac53c7541eb55b37d0cada5/README.md?plain=1#L82) when compiling `cosmic-applets`
+```
+sudo apt install libdisplay-info-dev
+sudo apt install gstreamer-sys
+sudo apt install libgstreamer1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+sudo apt install libgstreamer-plugins-base1.0-dev
+
+```
+
+```
+git clone --recurse-submodules https://github.com/pop-os/cosmic-epoch
+cd cosmic-epoch
+just sysext
+```
 
 ## cosmic-launcher
 
