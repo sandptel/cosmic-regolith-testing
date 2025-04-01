@@ -1,9 +1,14 @@
-# cosmic-launcher
+
+## cosmic-launcher
 
 **Completely Unresponsive**
 
 ## cosmic-settings
 Ran this with [cosmic-ext-sway-daemon](https://github.com/Drakulix/cosmic-ext-extra-sessions/blob/main/sway/cosmic-ext-sway-daemon/src/main.rs) shown by Victoria Brekenfeld at the ubucon running that allows changing accent colors and theming.
+
+https://github.com/user-attachments/assets/e5e887be-d348-47db-827f-da624aba38eb
+
+https://github.com/user-attachments/assets/e4fba602-ca3b-433b-976b-91ea353bcbf4
 
 ### what works out of the box?
 1. Display Settings
@@ -20,6 +25,7 @@ Ran this with [cosmic-ext-sway-daemon](https://github.com/Drakulix/cosmic-ext-ex
 1. Input Devices Settings (mouse/keyboard/touchpad settings)
 2. Power Settings (Idle Settings/ Power Mode)
 3. Desktop Section
+4. Firmware Page in About Section
 
    a. workspaces section (can use swayipc rust to fetch workspaces info --> can be implemented right away)
 
