@@ -2,6 +2,32 @@
 
 **Completely Unresponsive**
 
+## cosmic-settings
+Ran this with [cosmic-ext-sway-daemon](https://github.com/Drakulix/cosmic-ext-extra-sessions/blob/main/sway/cosmic-ext-sway-daemon/src/main.rs) shown by Victoria Brekenfeld at the ubucon running that allows changing accent colors and theming.
+
+### what works out of the box?
+1. Display Settings
+2. Sound Settings
+3. Desktop Section
+
+   a. Dock Settings (Glitches with auto hide options )
+
+   b. Panel Settings (Glitches with placements)
+
+   c. Appearance with changing accent colors | gaps size & active window hint size settings work (works with cosmic-ext-sway-daemon) 
+   
+### what does not work ?
+1. Input Devices Settings (mouse/keyboard/touchpad settings)
+2. Power Settings (Idle Settings/ Power Mode)
+3. Desktop Section
+
+   a. workspaces section (can use swayipc rust to fetch workspaces info --> can be implented right away)
+
+   b. window management settings including
+   1. minimize/maximize button visibility
+   2. Focus change settings
+   3. 3. window controls
+    
 ## cosmic-panel
 
 https://github.com/user-attachments/assets/ac8dc983-a860-4f48-aba2-94fa28088eab
@@ -10,10 +36,12 @@ Problems -
 1. only `cosmic-applet-power` respects sway drawing area. Rest (cosmic-applet-battery/audio/network/input-sources ..etc) voilate the rules and span across multiple workspaces.
 2. sway workspaces are not detected (expected)
 3. `cosmic-launcher` is non-responsive
-4. assecibility settings (magnifier) do not work (non-responsive)
+4. accessibility settings (magnifier) do not work (non-responsive)
 
 What Parts Work - 
 1. cosmic-panel integration with cosmic-settings (Changing opacity/ changing placement on screen for dock and panel/ adding and removing applets)
+
+# cosmic notifications
 
 
 ## cosmic-store
